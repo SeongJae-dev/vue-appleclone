@@ -2,9 +2,7 @@
   <div id="app">
     <Header/>
     <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-  
+    <SectionList/>
   </div>
 </template>
 
@@ -12,6 +10,8 @@
 <script>
 
 import Header from './layout/Header'
+import SectionList from './components/SectionList'
+
 
 export default {
   name: 'app',
@@ -22,6 +22,7 @@ export default {
   },
   components: {
     Header,
+    SectionList
   }
 }
 </script>
