@@ -1,4 +1,4 @@
-# vue-appleclone2
+# vue-appleclone
 
 ## Project setup
 ```

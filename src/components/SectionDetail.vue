@@ -1,8 +1,8 @@
 <template >
     <div id="vue-content">
-        <div class="vue-wrapper">
+        <div class="vue-container">
             <a class="link"></a>
-            <div class="vue-wapper">
+            <div class="vue-item">
                 <div class="vue-image-wapper">
                     <h2 class="headline">{{content.title}}</h2>
                     <h3 class="subhead">{{content.itemMainDesc}}</h3>
@@ -10,7 +10,9 @@
                     <p class="avail-msg" v-if="content.releaseDate !='' ">{{content.releaseDate}}</p>
                 </div>
             </div>
-            <div class="vue-wapper" ></div>
+            <div class="vue-image-wapper"  >
+                <figure :class="content.image"></figure>
+            </div>
         </div>
     </div>
 </template>
@@ -61,4 +63,21 @@ export default {
         margin-top: 10px;
         color: #86868b;
     }
+    
+    .vue-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imac{
+        background-image: url(../assets/images/imac.jpg);
+    }
+    .iPhone12-pro{
+        background-image: url(../assets/images/iPhone12_pro.jpg);
+    }
+    .iPhone12{
+        background-image: url(../assets/images/iPhone12.jpg);
+    }
+
+
 </style>

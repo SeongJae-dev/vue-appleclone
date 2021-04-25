@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header/>
-    <img src="./assets/logo.png">
     <SectionList/>
     <SectionGrid/>
     <Footer/>
