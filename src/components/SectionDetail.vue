@@ -2,10 +2,10 @@
     <div id="vue-content" class="vue-content">
         <div class="vue-container">
             <a class="link"></a>
-            <div class="vue-item">
+            <div class="vue-item" :class="content.image">
                 <div class="vue-image-wapper">
-                    <h2 class="headline">{{content.title}}</h2>
-                    <h3 class="subhead">{{content.itemMainDesc}}</h3>
+                    <h2 class="headline" :class="content.image">{{content.title}}</h2>
+                    <h3 class="subhead" :class="content.image">{{content.itemMainDesc}}</h3>
                     <p class="avail-msg" v-if="content.itemSubDesc !='' ">{{content.itemSubDesc}}</p>
                     <p class="avail-msg" v-if="content.releaseDate !='' ">{{content.releaseDate}}</p>
                 </div>
@@ -42,6 +42,9 @@ export default {
         word-break: keep-all;
         margin: 0;
     }
+    .headline.iPhone12-pro{
+        color: #f5f5f7;
+    }
     .subhead{
         font-size: 28px;
         line-height: 1.10722;
@@ -58,6 +61,9 @@ export default {
         position: relative;
         -ms-flex-negative: 1;
         flex-shrink: 1;
+    }
+    .subhead.iPhone12-pro{
+        color: #f5f5f7;
     }
     .avail-msg{
         margin-top: 10px;
@@ -82,7 +88,10 @@ export default {
     .vue-item{
         z-index: 4;
         pointer-events: none;
-        margin-top: var(--global-nav-collective-height);
+        /* margin-top: var(--global-nav-collective-height); */
+    }
+    .vue-item .imac{
+       background: #fbfbfd;
     }
 
     .image{
