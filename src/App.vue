@@ -3,6 +3,8 @@
     <Header/>
     <img src="./assets/logo.png">
     <SectionList/>
+    <SectionGrid/>
+    <Footer/>
   </div>
 </template>
 
@@ -11,6 +13,8 @@
 
 import Header from './layout/Header'
 import SectionList from './components/SectionList'
+import SectionGrid from './components/SectionGird'
+import Footer from './layout/Footer'
 
 
 export default {
@@ -22,22 +26,24 @@ export default {
   },
   components: {
     Header,
-    SectionList
+    SectionList,
+    SectionGrid,
+    Footer
+  
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "SF Pro KR","SF Pro Text","Yoon Gothic","Myriad Set Pro","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
   text-align: center;
   color: #2c3e50;
 }
 body {
   margin: 0;
   padding: 0;
+
 }
 
 h1, h2 {

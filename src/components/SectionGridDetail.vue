@@ -1,19 +1,19 @@
 <template >
-    <div id="vue-content">
-        content
+    <div id="vue-section-grid-detail">
+        
     </div>
 </template>
 <script>
 export default {
-    name:"vue-content",
+    name:"vue-section-grid-detail",
     props:{},
     data() {
         return {
-
+            
         }
     },
 }
 </script>
-<style lang="">
-
+<style >
+    
 </style>
